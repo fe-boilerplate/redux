@@ -1,0 +1,38 @@
+{
+  "name": "my-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A basic FE project.",
+  "dependencies": {
+    "fe-reset": "^1.0.6",
+    "history": "^4.3.0",
+    "react": "15.3.2",
+    "react-css-modules": "^3.7.10",
+    "react-dom": "15.3.2",
+    "react-router": "4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "standard": "^8.1.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": [
+      "fetch",
+      "alert"
+    ],
+    "ignore": [
+      "bin/",
+      "lib/",
+      "mock/",
+      "example/dist/",
+      "node_modules/"
+    ]
+  },
+  "scripts": {
+    "start": "fe dev",
+    "dev": "fe dev",
+    "build": "fe build",
+    "test": "fe test"
+  }
+}
