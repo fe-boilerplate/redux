@@ -1,0 +1,70 @@
+@import "~common/global.styl"
+@import "~common/mixins.styl"
+
+.wrap
+  width 100%
+  color #A2A2A2
+  font-size 12px
+  padding 40px 0
+  clearfix()
+
+.logo
+  float left
+  width 235px
+  margin-top -5px
+  a
+    font-size 40px
+    color #DD1415
+    text-decoration none
+
+.search
+  width 700px
+  float left
+  padding 0 20px
+  margin-right 10px
+  .input
+    float left
+    border 2px solid #DD1415
+    display inline-block
+    width calc(100% - 60px)
+    height 40px
+    line-height 40px
+    input
+      border none
+      font-size 14px
+      padding-left 10px
+      width 100%
+  button
+    border none
+    background #DD1415
+    height 40px
+    line-height 40px
+    color #fff
+    text-align center
+    width 60px
+
+.right
+  overflow hidden
+  clearfix()
+  span
+    display block
+    text-align center
+    height 40px
+    line-height 40px
+    font-size 14px
+  a
+    text-decoration none
+    display inline-block
+    width 100%
+  .cart
+    float left
+    background #DD1415
+    width 50%
+    a
+      color #fff
+  .order
+    overflow hidden
+    border 1px solid $border-color
+    background #F9F9F9
+    a
+      color #666

@@ -1,0 +1,26 @@
+.wrap
+  overflow hidden
+  ul
+    animation autoPlay 15s infinite linear
+    transition transform .75s ease-out
+    height 100%
+    width 400%
+  li
+    float left
+    width 25%
+
+@keyframes autoPlay
+  0%
+    transform translateX(0)
+  30%
+    transform translateX(0)
+  35%
+    transform translateX(-25%)
+  65%
+    transform translateX(-25%)
+  70%
+    transform translateX(-50%)
+  95%
+    transform translateX(-50%)
+  100%
+    margin-left 0

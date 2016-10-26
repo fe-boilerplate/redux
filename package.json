@@ -19,7 +19,8 @@
     "parser": "babel-eslint",
     "global": [
       "fetch",
-      "alert"
+      "alert",
+      "it"
     ],
     "ignore": [
       "bin/",

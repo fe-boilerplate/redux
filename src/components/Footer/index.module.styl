@@ -1,0 +1,53 @@
+@import "~common/global.styl"
+.wrap
+  width 100%
+
+.inner
+  margin 0 auto
+  width 960px
+
+.slogans
+  border-top 1px solid $border-color
+  border-bottom 1px solid $border-color
+  ul
+    display table
+    table-layout fixed
+    width 100%
+    padding 30px 0
+  li
+    font-size 14px
+    color #333
+    display table-cell
+    text-align center
+    border-left 1px solid $border-color
+    &:first-child
+      border-left none
+
+.links
+  ul
+    display table
+    table-layout fixed
+    width 100%
+    padding 30px 0
+  li
+    font-size 14px
+    color #444
+    display table-cell
+    line-height 2
+    dt
+      font-size 18px
+    dd
+      font-size 12px
+      color #999
+
+.circle
+  margin-bottom 10px
+  border-radius 50%
+  text-align center
+  font-size 18px
+  width 40px
+  height 40px
+  line-height 38px
+  display inline-block
+  color #DD2525
+  border 2px solid #DD2525

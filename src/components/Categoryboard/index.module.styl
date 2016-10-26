@@ -1,0 +1,67 @@
+@import "~common/global.styl"
+@import "~common/mixins.styl"
+
+.wrap
+  font-size 12px
+  margin-top 30px
+
+.header
+  border-bottom 2px solid #000
+  color #000
+  font-size 30px
+  font-weight bold
+  line-height 2
+
+.body
+  clearfix()
+
+.left
+  float left
+  width 235px
+  background #B1E3F4
+  height 400px
+  color #1E9FC4
+  padding 20px
+  font-size 25px
+  font-weight bold
+
+.right
+  width 100%
+
+.list
+  clearfix()
+  li
+    float left
+    border 1px solid $border-color
+    border-left-color #fff
+    border-top-color #fff
+    text-align center
+    width 20%
+    height 235px
+    background #fff
+
+    background-color #fff
+    // box-shadow 0 1px 2px rgba(0, 0, 0, 0.1)
+    -webkit-transition all .3s cubic-bezier(0.165, 0.84, 0.44, 1)
+    transition all .3s cubic-bezier(0.165, 0.84, 0.44, 1)
+    &:after
+      content ""
+      border-radius 5px
+      position absolute
+      z-index -1
+      top 0
+      left 0
+      width 100%
+      height 100%
+      box-shadow 0 5px 15px rgba(0, 0, 0, 0.3)
+      opacity 0
+      -webkit-transition all .3s cubic-bezier(0.165, 0.84, 0.44, 1)
+      transition all .3s cubic-bezier(0.165, 0.84, 0.44, 1)
+    &:hover
+      -webkit-transform scale(1.25, 1.25)
+      transform scale(1.25, 1.25)
+      z-index 10
+      border-radius 5px
+      border 1px solid $border-color
+      &:after
+        opacity 1

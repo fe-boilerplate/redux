@@ -1,0 +1,30 @@
+@import "~common/global.styl"
+@import "~common/mixins.styl"
+
+.wrap
+  width 100%
+  font-size 16px
+  line-height 40px
+  a
+    text-decoration none
+    color #333
+    display inline-block
+    // background #999
+    width 100%
+    padding 0 30px
+  ul
+    clearfix()
+  li
+    float left
+    &:hover
+      background #eee
+  .active
+    color #DD2525
+    background #fff
+    cursor default
+
+.fixed
+  width 235px
+  background #DD2525 !important
+  a
+    color #fff
