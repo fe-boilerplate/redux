@@ -92,7 +92,23 @@ export default [
     component: Empty
   },
   {
-    pattern: '/list',
+    pattern: '/logout',
+    title: '退出登录',
+    component: Empty
+  },
+  {
+    pattern: '/my',
+    title: '我的',
+    component: Empty
+  },
+  {
+    pattern: '/help',
+    title: '帮助中心',
+    component: Empty
+  },
+  {
+    pattern: '/service',
+    title: '在线客服',
     component: List
   },
   {

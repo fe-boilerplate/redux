@@ -1,5 +1,5 @@
 import React, { PureComponent, PropTypes } from 'react'
-import { Match } from 'react-router'
+import { Match, NavigationPrompt } from 'react-router'
 import CSSModules from 'react-css-modules'
 import styles from './index.module.styl'
 import Topbar from 'components/Topbar/'
@@ -20,6 +20,13 @@ export default class extends PureComponent {
     const { routes } = this.props
     return { routes }
   }
+  updateTitle = (location = window.location) => {
+    const route = this.props.routes.filter(route => route.pattern === location.pathname)
+    if (route && route[0]) document.title = route[0].title
+  }
+  componentWillMount () {
+    this.updateTitle()
+  }
   render () {
     const { routes } = this.props
     return (<div styleName='wrap'>
@@ -32,6 +39,9 @@ export default class extends PureComponent {
             <route.component title={route.title} {...props} routes={route.routes} />
           )} />
         ))}
+        <NavigationPrompt message={location => {
+          this.updateTitle(location)
+        }} />
       </div>
       <Footer />
     </div>)
