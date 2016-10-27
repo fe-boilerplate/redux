@@ -1,30 +1,31 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { Redirect, Link } from 'react-router'
 import CSSModules from 'react-css-modules'
 import styles from './index.module.styl'
 
 @CSSModules(styles)
-export default class extends PureComponent {
+export default class extends Component {
   state = {
     query: '',
     to: ''
   }
   render () {
+    const { to, query } = this.state
     return (<div styleName='wrap'>
       <span styleName='logo'>
         <Link to='/'>LMall.com</Link>
       </span>
       <div styleName='search'>
-        { this.state.to && <Redirect to={this.state.to} /> }
+        { to && <Redirect key={+new Date()} to={to} push /> }
         <form action='/search' onSubmit={e => {
           e.preventDefault()
           e.target.reset()
           this.setState({
-            to: '/search?' + this.state.query
+            to: `/search?${query}`
           })
         }}>
           <span styleName='input'>
-            <input onChange={e => this.setState({query: e.value})} value={this.state.query} name='query' />
+            <input onChange={({ target }) => this.setState({query: target.value})} value={this.state.query} name='query' />
           </span>
           <button type='submit'>search</button>
         </form>
