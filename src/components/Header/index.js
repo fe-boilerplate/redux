@@ -25,7 +25,7 @@ export default class extends Component {
           })
         }}>
           <span styleName='input'>
-            <input onChange={({ target }) => this.setState({query: target.value})} value={this.state.query} name='query' />
+            <input autoComplete='off' onChange={({ target }) => this.setState({query: target.value})} value={this.state.query} name='query' />
           </span>
           <button type='submit'>search</button>
         </form>
