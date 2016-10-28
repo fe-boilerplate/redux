@@ -4,7 +4,7 @@
   "private": true,
   "description": "A basic FE project.",
   "dependencies": {
-    "fe-reset": "^1.0.10",
+    "fe-reset": "^1.0.9",
     "history": "^4.3.0",
     "react": "15.3.2",
     "react-css-modules": "^3.7.10",
