@@ -7,7 +7,7 @@ export default class extends PureComponent {
   }
   render () {
     const { pattern, title } = this.props
-    return (<div style={{padding: '30px', borderTop: '1px solid #DD2525'}}>
+    return (<div>
       <h1>{title} | {pattern}</h1>
       <br />
       <Link to='/'>RETURN</Link>
