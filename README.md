@@ -1,3 +1,3 @@
-# my-demo
+# redux boilerplate
 
-A basic FE project.
+redux+route4+immutable
