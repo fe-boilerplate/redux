@@ -1,3 +1,3 @@
-# my-demo
+# {{ name }}
 
-A basic FE project.
+{{ description }}

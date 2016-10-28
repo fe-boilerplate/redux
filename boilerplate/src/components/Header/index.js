@@ -13,7 +13,7 @@ export default class extends Component {
     const { to, query } = this.state
     return (<div styleName='wrap'>
       <span styleName='logo'>
-        <Link to='/'>LMall.com</Link>
+        <Link to='/'>{{ name }}.com</Link>
       </span>
       <div styleName='search'>
         { to && <Redirect key={+new Date()} to={to} push /> }
